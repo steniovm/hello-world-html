@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--cabeçalho da pagina, com definição de caracteres e titulo-->
+        <meta charset="utl-8" />
+        <title>Formulario utilizando varios elementos</title>
+    </head>
+    <body style="background-color:#02AADD">
+    <!--fundo com um tom de ciano-->
+        <!--titulos utilizando cores diferentes-->
+        <h1 style="color: rgb(55, 61, 50);">Formulario utilizando varios elementos</h1>
+        <!--imagem clicavel com link abrindo em nova aba-->
+        
+        <p>Este Formulario utiliza diversos elementos</p>
+        <span>Click no elemento que desejar preencher</span><br /><br />
+        <form action="/resutados" method="POST">
+            <div>
+                <fieldset>
+                <label>Nome:</label><br />
+                <input type="text" id="Nome" value="Fulano de Tal" /><br />
+                <label>Senha:</label><br />
+                <input type="password" id="Senha" value="Abc195*#28" /><br />
+                <label>Nascimento:</label><br />
+                <input type="date" id="Nascimento" /><br /><br />
+                <label>Genero:</label><br />
+                <input type="radio" id="Masc" name="Genero" value="Masculino" />Masculino<br />
+                <input type="radio" id="Femin" name="Genero" value="Feminino" />Feminino<br />
+                <input type="radio" id="Nbin" name="Genero" value="Não binário" />Não binário<br />
+                </fieldset>
+                <fieldset>
+                <label>Conhecimentos:</label><br />
+                <input type="checkbox" id="Programacao" value="Programacao" />Programação<br />
+                <input type="checkbox" id="EditImag" value="EditImag" />Edição de imagens<br />
+                <input type="checkbox" id="Planilhas" value="Planilhas" />Planilhas<br />
+                <input type="checkbox" id="Eletronica" value="Eletronica" />Eletronica<br /><br />
+                <label>Dominio:</label><br />
+                <input type="range" id="Matematica" value="20" />Matematica<br />
+                <input type="range" id="Portugues" value="70" />Portugues<br />
+                <input type="range" id="Ingles" value="10" />Ingles<br />
+                <input type="range" id="Ciencias" value="50" />Ciências<br />
+                <input type="hidden" id="tipo" value="umtextesomente" />
+                </fieldset>
+                <input type="submit" value="Enviar resposta" />
+                <input type="reset" value="Limpar formulario" /><br />
+            </div>
+        </form>
+        
+    </body>
+</html>
